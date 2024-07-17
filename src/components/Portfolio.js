@@ -8,9 +8,9 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
-      description: 'Brief description of Project 1.',
-      image: '/images/py.jpg',
+      title: 'IOT Temp/Humidty Monitor',
+      description: 'Developed a comprehensive full-stack IoT system to monitor and visualize real-time temperature and humidity data. The project integrates frontend and backend technologies to provide an interactive user experience',
+      image: '/images/IOT-Temp-Humidity.png',
       technologies: ['React', 'Node.js', 'Express'],
       demoUrl: 'https://example.com/demo',
       githubUrl: 'https://github.com/example/project1',
