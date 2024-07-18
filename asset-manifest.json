@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.cfd0cfa3.css",
-    "main.js": "/my-portfolio/static/js/main.4f731a68.js",
+    "main.css": "/my-portfolio/static/css/main.7dde42e0.css",
+    "main.js": "/my-portfolio/static/js/main.117aa44b.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/py.jpg": "/my-portfolio/static/media/py.f91d34d9b5b17c682a1f.jpg",
     "static/media/CV.pdf": "/my-portfolio/static/media/CV.104acd2800ba2bdfcd1a.pdf",
+    "static/media/IOT-Temp-Humidity.png": "/my-portfolio/static/media/IOT-Temp-Humidity.9e44971700dc57110d56.png",
+    "static/media/git.png": "/my-portfolio/static/media/git.332584fdf67b75ccd094.png",
     "static/media/cv-img.png": "/my-portfolio/static/media/cv-img.4b8a236c4261ce393d0c.png",
     "static/media/headshot.jpeg": "/my-portfolio/static/media/headshot.2257b0e4c31a4fe03279.jpeg",
+    "static/media/linkedin.png": "/my-portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/my-portfolio/index.html",
-    "main.cfd0cfa3.css.map": "/my-portfolio/static/css/main.cfd0cfa3.css.map",
-    "main.4f731a68.js.map": "/my-portfolio/static/js/main.4f731a68.js.map",
+    "main.7dde42e0.css.map": "/my-portfolio/static/css/main.7dde42e0.css.map",
+    "main.117aa44b.js.map": "/my-portfolio/static/js/main.117aa44b.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfd0cfa3.css",
-    "static/js/main.4f731a68.js"
+    "static/css/main.7dde42e0.css",
+    "static/js/main.117aa44b.js"
   ]
 }
