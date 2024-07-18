@@ -8,6 +8,8 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CV from './components/CV';
+import Socials from './components/Socials'; // Import the Socials component
+
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <CV />
         <Portfolio />
         <Contact />
+        <Socials /> {/* Include the Socials component */}
+
       </main>
       <Footer />
     </div>
