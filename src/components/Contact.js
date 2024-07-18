@@ -15,14 +15,28 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setFormStatus('Form submitted successfully!');
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => setFormStatus('Form submission successful!'))
-      .catch((error) => setFormStatus('Form submission failed.'));
+      .then(() => {
+        setFormStatus('Form submitted successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        setFormStatus('Form submission failed.');
+        console.error(error);
+      });
   };
 
   return (
