@@ -1,6 +1,6 @@
 import React from 'react';
 import cvPdf from '../assets/CV.pdf'; // Adjust the path as needed
-import cvImg from '../assets/images/cv-img.png'; // Adjust the path as needed
+import cvImg from '../assets/cv-img.png'; // Adjust the path as needed
 
 const CV = () => {
   return (

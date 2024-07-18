@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import ProjectModal from './projectModal';
-import IOTImage from '../assets/images/IOT-Temp-Humidity.png';
-import Project2Image from '../assets/images/py.jpg';
-import Project3Image from '../assets/images/py.jpg';
+import IOTImage from '../assets/IOT-Temp-Humidity.png';
+import Project2Image from '../assets/py.jpg';
+import Project3Image from '../assets/py.jpg';
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);

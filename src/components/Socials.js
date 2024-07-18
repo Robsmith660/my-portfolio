@@ -1,6 +1,6 @@
 import React from 'react';
-import gitIcon from '../assets/images/git.png';
-import linkedinIcon from '../assets/images/linkedin.png';
+import gitIcon from '../assets/git.png';
+import linkedinIcon from '../assets/linkedin.png';
 
 const Socials = () => {
     return (
