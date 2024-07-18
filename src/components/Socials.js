@@ -7,7 +7,7 @@ const Socials = () => {
         <a href="https://github.com/robsmith660" target="_blank" rel="noopener noreferrer">
           <img src="/images/git.png" alt="GitHub" className="social-icon" />
         </a>
-        <a href="https://linkedin.com/in/rob-smith-4752801b3" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/rob-smith-4752001b3/" target="_blank" rel="noopener noreferrer">
           <img src="/images/linkedin.png" alt="LinkedIn" className="social-icon" />
         </a>
       </div>
