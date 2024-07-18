@@ -1,7 +1,4 @@
-// src/components/Contact.js
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
-
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState('');
@@ -19,25 +16,27 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Send email using EmailJS
-    emailjs.sendForm('service_lbevjg6', 'template_vy3sbxn', event.target, 'mc5Q-casFpmnu8SuB')
-      .then((result) => {
-        setFormStatus('Form submission successful!');
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
-        });
-      }, (error) => {
-        setFormStatus('Form submission failed.');
-        console.error(error.text);
-      });
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => setFormStatus('Form submission successful!'))
+      .catch((error) => setFormStatus('Form submission failed.'));
   };
 
   return (
-    <section id="contact" className="py-20 bg-grid-pattern text-black">      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 bg-grid-pattern text-black">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 block text-white">Contact Me</h2>
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-lg mx-auto"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <div className="mb-4">
             <label className="font-bold block text-white">Name</label>
             <input
@@ -74,7 +73,9 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-red-600 text-white px-4 py-2 rounded-lg">Send</button>
+          <button type="submit" className="bg-red-600 text-white px-4 py-2 rounded-lg">
+            Send
+          </button>
           {formStatus && <p className="mt-4 text-green-500">{formStatus}</p>}
         </form>
       </div>
