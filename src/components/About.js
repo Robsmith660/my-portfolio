@@ -1,5 +1,4 @@
 import React from 'react';
-import profileImage from '../assets/headshot.jpeg'; // Import your image
 
 const About = () => {
   return (
@@ -7,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
         {/* Image */}
         <div className="w-full md:w-1/3 mb-8 md:mb-0 flex justify-center">
-          <img src={profileImage} alt="Profile" className="rounded-full border-8 border-white shadow-lg"/>
+          <img src="/images/headshot.jpeg" alt="Profile" className="rounded-full border-8 border-white shadow-lg"/>
         </div>
         {/* Text Content */}
         <div className="w-full md:w-2/3 max-w-3xl mx-auto">

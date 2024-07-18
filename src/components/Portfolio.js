@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import ProjectModal from './projectModal';
-import IOTImage from '../assets/IOT-Temp-Humidity.png';
-import Project2Image from '../assets/py.jpg';
-import Project3Image from '../assets/py.jpg';
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -13,8 +10,8 @@ const Portfolio = () => {
       id: 1,
       title: 'IOT Temp/Humidity Monitor',
       description: 'Developed a comprehensive full-stack IoT system to monitor and visualize real-time temperature and humidity data. The project integrates frontend and backend technologies to provide an interactive user experience.',
-      image: IOTImage,
-      technologies: ['React', 'Chart.js', 'Axios', 'Chart.js', 'HTML', 'CSS', 'Node.js', 'Express', 'JWT', 'bcrypt.js', 'SQLite', 'Git', 'GitHub', 'Docker', 'Postman'],
+      image: '/images/IOT-Temp-Humidity.png',
+      technologies: ['React', 'Chart.js', 'Axios', 'HTML', 'CSS', 'Node.js', 'Express', 'JWT', 'bcrypt.js', 'SQLite', 'Git', 'GitHub', 'Docker', 'Postman'],
       demoUrl: 'https://robsmith660.github.io/iot-temp-humidity-monitor/',
       githubUrl: 'https://github.com/Robsmith660/iot-temp-humidity-monitor',
     },
@@ -22,8 +19,8 @@ const Portfolio = () => {
       id: 2,
       title: 'Project 2',
       description: 'Brief description of Project 2.',
-      image: Project2Image,
-      technologies: ['React', 'Chart.js', 'Axios', 'Chart.js', 'HTML', 'CSS', 'Node.js', 'Express', 'JWT', 'bcrypt.js', 'SQLite', 'Git', 'GitHub', 'Docker', 'Postman'],
+      image: '/images/py.jpg',
+      technologies: ['React', 'Chart.js', 'Axios', 'HTML', 'CSS', 'Node.js', 'Express', 'JWT', 'bcrypt.js', 'SQLite', 'Git', 'GitHub', 'Docker', 'Postman'],
       demoUrl: 'https://example.com/demo',
       githubUrl: 'https://github.com/example/project2',
     },
@@ -31,7 +28,7 @@ const Portfolio = () => {
       id: 3,
       title: 'Project 3',
       description: 'Brief description of Project 3.',
-      image: Project3Image,
+      image: '/images/py.jpg',
       technologies: ['React', 'Node.js', 'Express'],
       demoUrl: 'https://example.com/demo',
       githubUrl: 'https://github.com/Robsmith660/iot-temp-humidity-monitor',
