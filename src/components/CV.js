@@ -8,7 +8,7 @@ const CV = () => {
         <h2 className="text-4xl font-extrabold mb-8 text-center">Curriculum Vitae📑</h2>
         <div className="flex flex-col items-center">
           {/* Plain Image without hover or link */}
-          <img src="/images/cv-img.png" alt="CV Preview" className="mb-4 w-full max-w-xs rounded shadow-lg" />
+          <img src="/images/cv-img.png" alt="CV Preview" className="mb-4 w-full max-w-xs rounded" />
           <p className="text-lg leading-relaxed text-center max-w-xl">
             Feel free to read or download my CV as a PDF here!
           </p>
