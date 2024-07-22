@@ -4,11 +4,12 @@ import './index.css';
 // src/App.js
 import React from 'react';
 import Header from './components/Header';
-import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
-import CV from './components/CV';
-import Socials from './components/Socials'; // Import the Socials component
 import About from './components/About'
+import Skills from './components/Skills'; // Import the Socials component
+
+import Portfolio from './components/Portfolio';
+import Socials from './components/Socials'; // Import the Socials component
+import Footer from './components/Footer';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Header />
       <main>
         <About />
-        <CV />
+        <Skills />
         <Portfolio />
         <Socials /> {/* Include the Socials component */}
 

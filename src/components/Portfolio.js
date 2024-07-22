@@ -57,7 +57,7 @@ const Portfolio = () => {
               <h3 className="text-2xl font-semibold mb-2 text-gray-900">{project.title}</h3>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <button
-                className="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-red-800"
+                className="mt-4 ounded-full bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-red-800"
                 onClick={() => openModal(project)}
               >
                 View Details
