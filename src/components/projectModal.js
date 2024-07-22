@@ -1,13 +1,53 @@
 import React from 'react';
+import htmlIcon from '../assets/icons/html.png';
+import cssIcon from '../assets/icons/css.png';
+import jsIcon from '../assets/icons/javascript.png';
+import reactIcon from '../assets/icons/react.png';
+import javaIcon from '../assets/icons/java.png';
+import nodeIcon from '../assets/icons/node.png';
+import expressIcon from '../assets/icons/express.png';
+import pythonIcon from '../assets/icons/python.png';
+import sqlIcon from '../assets/icons/sql.png';
+import sqliteIcon from '../assets/icons/sqlite.png';
+import gitIcon from '../assets/icons/git1.png';
+import dockerIcon from '../assets/icons/docker.png';
+import tensorflowIcon from '../assets/icons/tensorflow.png';
+import sklearnIcon from '../assets/icons/sklearn.png';
+import pandasIcon from '../assets/icons/pandas.png';
+import numpyIcon from '../assets/icons/numpy.png';
+import axiosIcon from '../assets/icons/axios.png';
+import postmanIcon from '../assets/icons/postman.png';
+
+const techIcons = {
+  HTML: htmlIcon,
+  CSS: cssIcon,
+  JavaScript: jsIcon,
+  'React.js': reactIcon,
+  Java: javaIcon,
+  'Node.js': nodeIcon,
+  'Express.js': expressIcon,
+  Python: pythonIcon,
+  SQL: sqlIcon,
+  SQLite: sqliteIcon,
+  Git: gitIcon,
+  Docker: dockerIcon,
+  TensorFlow: tensorflowIcon,
+  'Scikit-learn': sklearnIcon,
+  Pandas: pandasIcon,
+  NumPy: numpyIcon,
+  Axios: axiosIcon,
+  Postman: postmanIcon,
+};
 
 const ProjectModal = ({ project, onClose }) => {
   return (
-    <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50 overflow-x-hidden overflow-y-auto outline-none">
-      <div className="relative max-w-lg mx-auto my-6 bg-white rounded-lg shadow-lg transform transition-all duration-300 ease-in-out">
-        <div className="absolute top-0 right-0 p-2">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 overflow-x-hidden overflow-y-auto outline-none">
+      <div className="relative w-full max-w-3xl mx-auto my-6 bg-white rounded-lg shadow-lg transform transition-all duration-300 ease-in-out overflow-y-auto max-h-screen">
+        <div className="absolute top-0 right-0 p-2 z-50">
           <button
             className="text-gray-500 hover:text-gray-700 focus:outline-none"
             onClick={onClose}
+            aria-label="Close modal"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,24 +65,28 @@ const ProjectModal = ({ project, onClose }) => {
             </svg>
           </button>
         </div>
-        <div className="p-6">
-          <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
+        <div className="p-6 space-y-6">
+          <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">{project.title}</h2>
+          <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded mb-4" />
           <p className="text-gray-700 mb-4">{project.description}</p>
-          <div className="mt-4">
-            <h3 className="text-lg font-semibold mb-2">Technologies Used</h3>
-            <ul className="list-disc list-inside space-y-1">
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-900">Technologies Used</h3>
+            <div className="flex flex-wrap justify-center">
               {project.technologies.map((tech) => (
-                <li key={tech} className="text-gray-700">{tech}</li>
+                <div key={tech} className="text-gray-900 flex items-center border-2 border-gray-300 rounded-lg p-2 m-2 transition duration-300 transform hover:bg-gray-200 hover:text-gray-900 hover:scale-105">
+                  <img src={techIcons[tech]} alt={tech} className="w-6 h-6 mr-2" />
+                  {tech}
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
-          <div className="mt-4">
-            <h3 className="text-lg font-semibold mb-2">Links</h3>
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-900">Links</h3>
             <div className="flex space-x-4">
               {project.demoUrl && (
                 <a
                   href={project.demoUrl}
-                  className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+                  className="bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-lg transition-colors duration-300 hover:from-red-600 hover:to-yellow-600"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -52,7 +96,7 @@ const ProjectModal = ({ project, onClose }) => {
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
-                  className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+                  className="bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-lg transition-colors duration-300 hover:from-red-600 hover:to-yellow-600"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -61,6 +105,12 @@ const ProjectModal = ({ project, onClose }) => {
               )}
             </div>
           </div>
+          <button
+            className="w-full mt-6 py-2 bg-gradient-to-r from-red-500 to-yellow-500 text-white rounded-lg transition-colors duration-300 hover:from-red-600 hover:to-yellow-600"
+            onClick={onClose}
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>

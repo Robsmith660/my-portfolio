@@ -25,7 +25,7 @@ const About = () => {
             <a href={pdf} className="px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-yellow-500 text-white transition-colors duration-300 hover:from-red-700 hover:to-red-900 text-center" target="_blank" rel="noopener noreferrer">
               Download CV (PDF)
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" className="px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-yellow-500 text-white transition-colors duration-300 hover:from-red-700 hover:to-red-900 text-center" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/rob-smith-4752001b3/" className="px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-yellow-500 text-white transition-colors duration-300 hover:from-red-700 hover:to-red-900 text-center" target="_blank" rel="noopener noreferrer">
               LinkedIn Profile
             </a>
           </div>
