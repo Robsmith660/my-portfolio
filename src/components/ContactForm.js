@@ -18,16 +18,15 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('/.netlify/functions/submit-form', {
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch('/', {
       method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      body: data,
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+      .then(() => {
+        console.log('Form successfully submitted');
         alert('Form submitted successfully!');
         setFormData({ name: '', email: '', message: '' });
       })
@@ -38,7 +37,13 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form 
+      name="contact" 
+      method="POST" 
+      data-netlify="true" 
+      onSubmit={handleSubmit}
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <label>
         Name:
         <input type="text" name="name" value={formData.name} onChange={handleChange} required />
