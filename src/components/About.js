@@ -9,8 +9,8 @@ const About = () => {
           <img src="/images/headshot.jpeg" alt="Profile" className="rounded-full border-8 border-white shadow-lg"/>
         </div>
         {/* Text Content */}
-        <div className="w-full md:w-2/3 max-w-3xl mx-auto">
-          <div className="bg-slate-600 rounded-lg shadow-lg p-8 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+        <div className="w-full md:w-2/3 max-w-3xl mx-auto mt-4 md:mt-0 md:ml-8">
+          <div className="bg-slate-600 rounded-lg shadow-lg p-8 transition duration-300 ease-in-out transform">
             <h2 className="text-4xl font-extrabold mb-6 text-center text-white">About Rob🙋‍♂️</h2>
             <p className="text-lg leading-relaxed mb-6 text-white">
               I am a passionate and dedicated Computer Science graduate with a keen interest in leveraging technology to solve real-world problems. Over the course of my four-year degree, I have honed my skills through coursework, projects, and hands-on experience, developing a solid foundation in software development, data structures, and algorithms.

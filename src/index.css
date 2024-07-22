@@ -11,7 +11,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background pattern shared across components */
+.bg-grid-pattern {
+  background-color: #1e293b; /* Fallback color */
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent),
+                    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  background-size: 20px 20px;
+}
+
+
+/* If not used, you can remove these classes */
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }

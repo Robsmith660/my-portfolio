@@ -1,15 +1,15 @@
 
-import './App.css';
+import './index.css';
+
 // src/App.js
 import React from 'react';
 import Header from './components/Header';
-import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CV from './components/CV';
 import Socials from './components/Socials'; // Import the Socials component
-
+import About from './components/About'
 
 
 function App() {
