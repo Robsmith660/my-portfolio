@@ -5,7 +5,6 @@ import './index.css';
 import React from 'react';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import CV from './components/CV';
 import Socials from './components/Socials'; // Import the Socials component
@@ -20,7 +19,6 @@ function App() {
         <About />
         <CV />
         <Portfolio />
-        <ContactForm />
         <Socials /> {/* Include the Socials component */}
 
       </main>
