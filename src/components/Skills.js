@@ -47,9 +47,10 @@ const skillsData = {
 
 const Skills = () => {
   return (
+    
     <section id="skills" className="py-20 bg-grid-pattern text-white">
       <div className="container mx-auto px-4 flex flex-col items-center">
-        <h3 className="text-3xl font-extrabold mb-4 text-center text-white">Skills</h3>
+        <h3 className="text-3xl font-extrabold mb-4 text-center text-white">Skills🚀</h3>
         <p className="text-center text-lg mb-8 text-white">Here are some of the technical skills I have acquired over the years:</p>
         {/* Frontend Skills */}
         <div className="w-full md:w-2/3 max-w-3xl mx-auto mb-8">
