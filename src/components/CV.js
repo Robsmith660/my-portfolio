@@ -12,7 +12,7 @@ const CV = () => {
           <p className="text-lg leading-relaxed text-center max-w-xl">
             Feel free to read or download my CV as a PDF here!
           </p>
-          <a href={pdf} className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg transition-colors duration-300 hover:bg-blue-700" target="_blank" rel="noopener noreferrer">
+          <a href={pdf} className="mt-4 px-6 py-3 bg-red-600 text-white rounded-lg transition-colors duration-300 hover:bg-red-800" target="_blank" rel="noopener noreferrer">
             Download CV (PDF)
           </a>
         </div>
