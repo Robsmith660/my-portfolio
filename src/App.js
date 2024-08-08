@@ -5,10 +5,13 @@ import './index.css';
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About'
-import Skills from './components/Skills'; // Import the Socials component
+import Skills from './components/Skills'; 
 
 import Portfolio from './components/Portfolio';
-import Socials from './components/Socials'; // Import the Socials component
+import Contact from './components/Contact'; 
+
+import Socials from './components/Socials'; 
+
 import Footer from './components/Footer';
 
 
@@ -19,8 +22,10 @@ function App() {
       <main>
         <About />
         <Skills />
+        
         <Portfolio />
-        <Socials /> {/* Include the Socials component */}
+        <Contact />
+        <Socials /> 
 
       </main>
       <Footer />
