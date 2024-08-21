@@ -33,7 +33,7 @@ const Portfolio = () => {
       image: '/images/travel-sys.png',  // Make sure this image exists in your project
       videoUrl: '/videos/travel-sys-demo.mp4', // Add the video URL here
 
-      technologies: ['React', 'Node.js', 'Express', 'MongoDB', , 'Axios','TailwindCSS', 'Git', 'GitHub','Postman'],
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB','Axios','TailwindCSS', 'Git', 'GitHub','Postman'],
       githubUrl: 'https://github.com/Robsmith660/flight-booking-system',
       category: 'web'
     },
