@@ -12,8 +12,8 @@ const Portfolio = () => {
       title: 'IOT Temp/Humidity Monitor',
       description: 'Developed a comprehensive full-stack IoT system to monitor and visualize real-time temperature and humidity data. The project integrates frontend and backend technologies to provide an interactive user experience.',
       image: '/images/IOT-Temp-Humidity.png',
-      technologies: ['React', 'Chart.js', 'Axios', 'HTML', 'CSS', 'Node.js', 'Express', 'JWT', 'bcrypt.js', 'SQLite', 'Git', 'GitHub', 'Docker', 'Postman'],
-      demoUrl: 'https://robsmith660.github.io/iot-temp-humidity-monitor/',
+      videoUrl: '/videos/temp-hum-demo.mp4', // Add the video URL here
+      technologies: ['React', 'Chart.js', 'Axios', 'HTML', 'TailwindCSS', 'Node.js', 'Express', 'JWT', 'bcrypt.js', 'SQLite', 'Git', 'GitHub', 'Docker', 'Postman'],
       githubUrl: 'https://github.com/Robsmith660/iot-temp-humidity-monitor',
       category: 'web'
     },
@@ -21,20 +21,20 @@ const Portfolio = () => {
       id: 2,
       title: 'Machine Learning Project',
       description: 'Implemented a machine learning model to predict outcomes based on data analysis and feature engineering.',
-      image: '/images/machine-learning.png',
+      image: '/images/machinelearning.png',
       technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy'],
-      demoUrl: 'https://robsmith660.github.io/machine-learning-project/',
       githubUrl: 'https://github.com/Robsmith660/machine-learning-project',
       category: 'ml'
     },
     {
       id: 3,
-      title: 'Another Web App',
-      description: 'A web application with modern technologies and robust architecture.',
-      image: '/images/another-web-app.png',
-      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-      demoUrl: 'https://robsmith660.github.io/another-web-app/',
-      githubUrl: 'https://github.com/Robsmith660/another-web-app',
+      title: 'Flight Booking System',
+      description: 'A full-stack web application to manage flight bookings, passengers, and flight details. The project includes a frontend for user interaction and a backend for handling database operations.',
+      image: '/images/travel-sys.png',  // Make sure this image exists in your project
+      videoUrl: '/videos/travel-sys-demo.mp4', // Add the video URL here
+
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', , 'Axios','TailwindCSS', 'Git', 'GitHub','Postman'],
+      githubUrl: 'https://github.com/Robsmith660/flight-booking-system',
       category: 'web'
     },
   ];
@@ -86,7 +86,7 @@ const Portfolio = () => {
               key={project.id}
               className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col"
             >
-              <img src={project.image} alt={project.title} className="mb-4 rounded w-full h-48 object-cover" />
+              <img src={project.image} alt={project.title} className="mb-4 rounded w-full h-auto object-contain" />
               <h3 className="text-2xl font-semibold mb-2 text-gray-900">{project.title}</h3>
               <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
               <button

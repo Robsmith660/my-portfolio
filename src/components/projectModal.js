@@ -1,6 +1,6 @@
 import React from 'react';
 import htmlIcon from '../assets/icons/html.png';
-import cssIcon from '../assets/icons/css.png';
+import tailwindcssIcon from '../assets/icons/tailwindcss.png';
 import jsIcon from '../assets/icons/javascript.png';
 import reactIcon from '../assets/icons/react.png';
 import javaIcon from '../assets/icons/java.png';
@@ -17,15 +17,21 @@ import pandasIcon from '../assets/icons/pandas.png';
 import numpyIcon from '../assets/icons/numpy.png';
 import axiosIcon from '../assets/icons/axios.png';
 import postmanIcon from '../assets/icons/postman.png';
+import chartjsIcon from '../assets/icons/chartjs.png';
+import bcryptIcon from '../assets/icons/bcrypt.png';
+import jwtIcon from '../assets/icons/jwt.png';
+import githubIcon from '../assets/icons/githublogo.png';
+import mongodbicon from '../assets/icons/mongodb.png';
+
 
 const techIcons = {
   HTML: htmlIcon,
-  CSS: cssIcon,
+  TailwindCSS: tailwindcssIcon,
   JavaScript: jsIcon,
-  'React.js': reactIcon,
+  React: reactIcon,
   Java: javaIcon,
   'Node.js': nodeIcon,
-  'Express.js': expressIcon,
+  Express: expressIcon,
   Python: pythonIcon,
   SQL: sqlIcon,
   SQLite: sqliteIcon,
@@ -37,6 +43,11 @@ const techIcons = {
   NumPy: numpyIcon,
   Axios: axiosIcon,
   Postman: postmanIcon,
+  'Chart.js': chartjsIcon,  // Make sure this key matches the one in the array
+  JWT: jwtIcon,         // Make sure this key matches the one in the array
+  'bcrypt.js': bcryptIcon,   // Make sure this key matches the one in the array
+  GitHub: githubIcon,
+  MongoDB: mongodbicon,
 };
 
 const ProjectModal = ({ project, onClose }) => {
@@ -67,13 +78,30 @@ const ProjectModal = ({ project, onClose }) => {
         </div>
         <div className="p-6 space-y-6">
           <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">{project.title}</h2>
-          <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded mb-4" />
+          
+          {project.videoUrl ? (
+            <video 
+              src={project.videoUrl} 
+              controls 
+              className="mb-4 w-full h-64 object-cover rounded"
+            />
+          ) : (
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full h-64 object-cover rounded mb-4"
+            />
+          )}
+          
           <p className="text-gray-700 mb-4">{project.description}</p>
           <div>
             <h3 className="text-lg font-semibold mb-2 text-gray-900">Technologies Used</h3>
             <div className="flex flex-wrap justify-center">
               {project.technologies.map((tech) => (
-                <div key={tech} className="text-gray-900 flex items-center border-2 border-gray-300 rounded-lg p-2 m-2 transition duration-300 transform hover:bg-gray-200 hover:text-gray-900 hover:scale-105">
+                <div
+                  key={tech}
+                  className="text-gray-900 flex items-center border-2 border-gray-300 rounded-lg p-2 m-2 transition duration-300 transform hover:bg-gray-200 hover:text-gray-900 hover:scale-105"
+                >
                   <img src={techIcons[tech]} alt={tech} className="w-6 h-6 mr-2" />
                   {tech}
                 </div>
@@ -83,16 +111,6 @@ const ProjectModal = ({ project, onClose }) => {
           <div>
             <h3 className="text-lg font-semibold mb-2 text-gray-900">Links</h3>
             <div className="flex space-x-4">
-              {project.demoUrl && (
-                <a
-                  href={project.demoUrl}
-                  className="bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-lg transition-colors duration-300 hover:from-red-600 hover:to-yellow-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Demo
-                </a>
-              )}
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
@@ -118,3 +136,4 @@ const ProjectModal = ({ project, onClose }) => {
 };
 
 export default ProjectModal;
+
