@@ -19,8 +19,8 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Machine Learning Project',
-      description: 'Implemented a machine learning model to predict outcomes based on data analysis and feature engineering.',
+      title: 'Text and Image Analysis Multimodal ',
+      description: 'Developed a multimodal machine learning model for identifying misogynistic content in memes, integrating textual and visual analysis to enhance detection capabilities significantly. ',
       image: '/images/machinelearning.png',
       technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy'],
       githubUrl: 'https://github.com/Robsmith660/machine-learning-project',
