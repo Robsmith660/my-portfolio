@@ -23,7 +23,7 @@ const Portfolio = () => {
       description: 'Developed a multimodal machine learning model for identifying misogynistic content in memes, integrating textual and visual analysis to enhance detection capabilities significantly. ',
       image: '/images/machinelearning.png',
       technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy'],
-      githubUrl: 'https://github.com/Robsmith660/machine-learning-project',
+      githubUrl: 'https://github.com/Robsmith660/text-image-multimodal',
       category: 'ml'
     },
     {
@@ -34,7 +34,7 @@ const Portfolio = () => {
       videoUrl: '/videos/travel-sys-demo.mp4', // Add the video URL here
 
       technologies: ['React', 'Node.js', 'Express', 'MongoDB','Axios','TailwindCSS', 'Git', 'GitHub','Postman'],
-      githubUrl: 'https://github.com/Robsmith660/flight-booking-system',
+      githubUrl: 'https://github.com/Robsmith660/travel-system',
       category: 'web'
     },
   ];
