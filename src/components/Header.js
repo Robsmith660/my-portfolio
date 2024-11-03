@@ -1,13 +1,12 @@
 import React from 'react';
+import nameImage from '../assets/robert-smith-high-resolution-logo-transparent.png'; // Adjust the path as needed
 
 const Header = () => {
   return (
     <header className="bg-black text-white p-4 fixed w-full top-0 z-50 shadow-lg">
       <nav className="container mx-auto flex flex-wrap justify-between items-center">
-        <div className="text-2xl font-bold tracking-wide text-white-500 hover:text-red-500 transition duration-300">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500">
-            Robert Smith
-          </span>
+        <div className="text-2xl font-bold tracking-wide hover:text-red-500 transition duration-300">
+          <img src={nameImage} alt="Robert Smith Logo" className="h-8" /> {/* Adjust the height as needed */}
         </div>
         <div className="flex-grow flex flex-wrap justify-center mt-4 md:mt-0">
           <a href="#about" className="px-3 py-2 transition duration-300 ease-in-out transform hover:text-red-600 hover:scale-110">About</a>
@@ -26,3 +25,4 @@ const Header = () => {
 };
 
 export default Header;
+
