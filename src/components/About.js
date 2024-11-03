@@ -12,13 +12,16 @@ const About = () => {
             <h3 className="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500">I am a Full Stack Developer</h3>
 
             <p className="text-lg leading-relaxed mb-6 text-white">
-              I am a passionate and dedicated Computer Science graduate with a keen interest in leveraging technology to solve real-world problems. Over the course of my four-year degree, I have honed my skills through coursework, projects, and hands-on experience, developing a solid foundation in software development, data structures, and algorithms.
+              - **Computer Science graduate** with a focus on full stack development.
             </p>
             <p className="text-lg leading-relaxed mb-6 text-white">
-              My journey in technology has been fueled by a curiosity to explore emerging trends and a commitment to continuous learning. Proficient in a variety of programming languages and frameworks, I thrive in dynamic environments where I can collaborate with like-minded individuals to innovate and create impactful solutions.
+              - **Hands-on experience** in IoT, data analysis, and machine learning.
+            </p>
+            <p className="text-lg leading-relaxed mb-6 text-white">
+              - **Developed AR-based training tools** during an internship at Medtronic to boost team productivity.
             </p>
             <p className="text-lg leading-relaxed text-white">
-              As I embark on the next phase of my career, I am eager to apply my knowledge and skills to contribute meaningfully to projects that make a difference. I am driven by a desire to make a positive impact, and I am excited about the possibilities that lie ahead.
+              - Passionate about **solving real-world problems** through tech and always eager to learn more.
             </p>
           </div>
           <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
