@@ -8,7 +8,7 @@ const About = () => {
         {/* Text Content */}
         <div className="w-full md:w-2/3 max-w-3xl mx-auto mt-4 md:mt-0 md:mr-8 mb-8 md:mb-0">
           <div className="bg-slate-600 rounded-lg shadow-lg p-8 transition duration-300 ease-in-out transform">
-            <h2 className="text-4xl font-extrabold mb-6 text-white">Im Rob Smith🙋‍♂️</h2>
+            <h2 className="text-4xl font-extrabold mb-6 text-white">Im Robert Smith🙋‍♂️</h2>
             <h3 className="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500">Full Stack Developer</h3>
 
             <p className="text-lg leading-relaxed mb-6 text-white">
