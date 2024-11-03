@@ -8,20 +8,20 @@ const About = () => {
         {/* Text Content */}
         <div className="w-full md:w-2/3 max-w-3xl mx-auto mt-4 md:mt-0 md:mr-8 mb-8 md:mb-0">
           <div className="bg-slate-600 rounded-lg shadow-lg p-8 transition duration-300 ease-in-out transform">
-            <h2 className="text-4xl font-extrabold mb-6 text-white">Hi, I am Rob🙋‍♂️</h2>
-            <h3 className="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500">I am a Full Stack Developer</h3>
+            <h2 className="text-4xl font-extrabold mb-6 text-white">Im Rob Smith🙋‍♂️</h2>
+            <h3 className="text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500">Full Stack Developer</h3>
 
             <p className="text-lg leading-relaxed mb-6 text-white">
-              - **Computer Science graduate** with a focus on full stack development.
+              - Computer Science graduate with a focus on full stack development.
             </p>
             <p className="text-lg leading-relaxed mb-6 text-white">
-              - **Hands-on experience** in IoT, data analysis, and machine learning.
+              - Projects in IoT, data analysis, and machine learning.
             </p>
             <p className="text-lg leading-relaxed mb-6 text-white">
-              - **Developed AR-based training tools** during an internship at Medtronic to boost team productivity.
+              - Developed AR-based training tools during an internship at Medtronic to boost team productivity.
             </p>
             <p className="text-lg leading-relaxed text-white">
-              - Passionate about **solving real-world problems** through tech and always eager to learn more.
+              - Passionate about solving real-world problems through tech and always eager to learn more.
             </p>
           </div>
           <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
